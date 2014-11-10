@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
- replicaid='49257D8C004BB9AE'>
-<noteinfo noteid='14e' unid='D79CDC96FF5BD5E649257D8C004A6A94' sequence='4'>
-<created><datetime>20141110T223249,48+09</datetime></created>
-<modified><datetime>20141110T224707,66+09</datetime></modified>
-<revised><datetime>20141110T224302,55+09</datetime></revised>
-<lastaccessed><datetime>20141110T224707,66+09</datetime></lastaccessed>
-<addedtofile><datetime>20141110T224707,66+09</datetime></addedtofile></noteinfo>
+ replicaid='49257D8C004F4D41'>
+<noteinfo noteid='17e' unid='00C183128551629B49257D8C004FD948' sequence='2'>
+<created><datetime>20141110T233209,68+09</datetime></created>
+<modified><datetime>20141110T233209,81+09</datetime></modified>
+<revised><datetime>20141110T233209,80+09</datetime></revised>
+<lastaccessed><datetime>20141110T233209,81+09</datetime></lastaccessed>
+<addedtofile><datetime>20141110T233209,79+09</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=admin/O=lotus</name></updatedby>
 <wassignedby><name>CN=admin/O=lotus</name></wassignedby>
 <item name='$HTMLCode' sign='true'>
