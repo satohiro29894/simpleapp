@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="form"
+			action="editDocument">
+		</xp:dominoDocument>
+	</xp:this.data>
+	<xc:c_Layout>
+		<xp:this.facets>
+			<xe:formTable id="formTable1" xp:key="facet_1">
+
+				<xp:this.facets></xp:this.facets>
+				<xe:formRow id="formRow1" xp:key="footer" label="件名">
+					<xp:inputText id="inputText1" value="#{document1.Subject}"></xp:inputText>
+				</xe:formRow>
+				<xe:formRow id="formRow2" label="カテゴリ">
+					<xp:inputText id="inputText2" value="#{document1.Category}"></xp:inputText>
+				</xe:formRow>
+				<xe:formRow id="formRow3" label="本文">
+					<xp:inputRichText id="inputRichText1" value="#{document1.Body}"></xp:inputRichText>
+				</xe:formRow><xe:formRow id="formRow4">
+	<xp:button value="保存" id="button1"><xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+	<xp:this.action>
+		<xp:save name="/v_All.xsp"></xp:save>
+	</xp:this.action></xp:eventHandler></xp:button></xe:formRow>
+				
+			</xe:formTable>
+		</xp:this.facets>
+	</xc:c_Layout>
+</xp:view>

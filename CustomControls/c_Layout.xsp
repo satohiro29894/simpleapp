@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:this.facets>
+			<xe:outline id="outline1" xp:key="LeftColumn">
+				<xe:this.treeNodes>
+					<xe:basicLeafNode title="すべての文書" href="./v_All.xsp"
+						label="すべての文書">
+					</xe:basicLeafNode>
+					<xe:basicLeafNode label="カテゴリ別"
+						href="./v_Category.xsp">
+					</xe:basicLeafNode>
+				</xe:this.treeNodes>
+			</xe:outline>
+		</xp:this.facets>
+		<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+		<xe:this.configuration>
+			<xe:oneuiApplication banner="false" titleBarName="シンプルアプリ"
+				placeBar="false" legal="false" footer="false">
+				<xe:this.footerLinks>
+					<xe:basicContainerNode label="コンテナ 1">
+						<xe:this.children>
+							<xe:basicLeafNode label="リンク 1" href="/"></xe:basicLeafNode>
+							<xe:basicLeafNode label="リンク 2" href="/"></xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+					<xe:basicContainerNode label="コンテナ 2">
+						<xe:this.children>
+							<xe:basicLeafNode label="リンク 1" href="/"></xe:basicLeafNode>
+							<xe:basicLeafNode label="リンク 2" href="/"></xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+				</xe:this.footerLinks>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout></xp:view>
