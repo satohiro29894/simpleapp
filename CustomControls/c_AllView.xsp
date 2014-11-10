@@ -5,7 +5,7 @@
 	<xp:this.action>
 		<xp:openPage name="/f_Form.xsp" target="newDocument"></xp:openPage>
 	</xp:this.action></xp:eventHandler></xp:button>
-	<xp:viewPanel rows="30" id="viewPanel1" viewStyle="width:100%">
+	&#160;<xp:viewPanel rows="30" id="viewPanel1" viewStyle="width:100%">
 		<xp:this.facets>
 			<xp:pager partialRefresh="true" layout="Previous Group Next"
 				xp:key="headerPager" id="pager1">
