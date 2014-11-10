@@ -2,4 +2,6 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
+	
+	
 	<xc:c_Layout><xp:this.facets><xp:viewPanel rows="30" id="viewPanel1" xp:key="facet_1" viewStyle="width:100.0%"><xp:this.facets><xp:pager partialRefresh="true" layout="Previous Group Next" xp:key="headerPager" id="pager1"></xp:pager></xp:this.facets><xp:this.data><xp:dominoView var="view1" viewName="All"></xp:dominoView></xp:this.data><xp:viewColumn columnName="Category" id="viewColumn1"><xp:viewColumnHeader id="viewColumnHeader1" value="カテゴリ"></xp:viewColumnHeader></xp:viewColumn><xp:viewColumn columnName="Subject" id="viewColumn2" displayAs="link"><xp:viewColumnHeader id="viewColumnHeader2" value="件名"></xp:viewColumnHeader></xp:viewColumn></xp:viewPanel></xp:this.facets></xc:c_Layout></xp:view>
