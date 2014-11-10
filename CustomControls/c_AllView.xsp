@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:button value="新規作成" id="button1"><xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+	<xp:this.action>
+		<xp:openPage name="/f_Form.xsp" target="newDocument"></xp:openPage>
+	</xp:this.action></xp:eventHandler></xp:button>
+	<xp:viewPanel rows="30" id="viewPanel1" viewStyle="width:100%">
+		<xp:this.facets>
+			<xp:pager partialRefresh="true" layout="Previous Group Next"
+				xp:key="headerPager" id="pager1">
+			</xp:pager>
+		</xp:this.facets>
+		<xp:this.data>
+			<xp:dominoView var="view1" viewName="All"></xp:dominoView>
+		</xp:this.data>
+		<xp:viewColumn columnName="Category" id="viewColumn1">
+			<xp:viewColumnHeader value="カテゴリ" id="viewColumnHeader1"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Subject" id="viewColumn2" displayAs="link">
+			<xp:viewColumnHeader value="件名" id="viewColumnHeader2"></xp:viewColumnHeader>
+		</xp:viewColumn>
+	</xp:viewPanel></xp:view>
